@@ -1,0 +1,25 @@
+[Desktop Entry]
+X-AppInstall-Package=xchat-se
+X-AppInstall-Popcon=42
+X-AppInstall-Section=universe
+
+Name=XChat-SE
+GenericName=IRC Client
+Comment=Chat with other people online
+Keywords=IM;Chat;
+Exec=/path/to/xchat-se/xchat -e -c 'GUI SHOW' %U
+Icon=/path/to/xchat-se/icons/xchat.png
+Terminal=false
+Type=Application
+Categories=GTK;Network;IRCClient;
+StartupNotify=false
+X-GNOME-UsesNotifications=true
+MimeType=x-scheme-handler/irc;x-scheme-handler/ircs;
+Actions=SafeMode;
+StartupWMClass=xchat
+
+[Desktop Action SafeMode]
+Name=Open Safe Mode
+Exec=/path/to/xchat-se/xchat --no-auto --no-plugins
+
+X-Ubuntu-Gettext-Domain=app-install-data
